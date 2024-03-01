@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    html{
+        background-image: url('https://media.giphy.com/media/qA9BnxUPmgWgU/giphy.gif'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+      }
+     
+      .container {
+        text-align: match parent; 
+        padding-top: 40%; 
+      }
+      .pergunta {
+        font-size: 25px; 
+        font-family: Arial, sans-serif; 
+        color: white; 
+      }
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px 5px; 
+  background-color: #de8015;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <p class="pergunta">Oi morinho, vai fazer tudo que eu quiser? <br>Escolha "Sim" ou "Não"?</p>
+        <button class="button" onmouseover="moveButton(this)">Não</button>
+        <button class="button" onclick="alert('Resposta correta!')">Sim</button>
+    </div>
+
+<script>
+    function moveButton(x) {
+        marginX = Math.floor(Math.random()*500)
+        marginY = Math.floor(Math.random()*500)
+        x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+    }
+</script>
+</body>
+</html>
+
+
